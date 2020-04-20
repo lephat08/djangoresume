@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width"/>
 <meta name="description" content="The Curriculum Vitae of Joe Bloggs."/>
 <meta charset="UTF-8"> 
-<link type="text/css" rel="stylesheet" href="{% static "css/style.css" %}">
 <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link type="text/css" rel="stylesheet" href="{% static "css/style.css" %}">
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -29,7 +29,7 @@
 		<div id="contactDetails" class="quickFade delayFour">
 			<ul>
 				<li>Email: <a href="mailto:lehuuphat08@gmail.com" target="_blank">lehuuphat08@gmail.com</a></li>
-				<li>Git hub: <a href="https://github.com/lephat08/">https://github.com/lephat08/</a></li>
+				<li>GitHub: <a href="https://github.com/lephat08/">https://github.com/lephat08/</a></li>
 				<li>Phone: 0834424579</li>
 			</ul>
 		</div>
@@ -44,7 +44,12 @@
 				</div>
 				
 				<div class="sectionContent">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor metus, interdum at scelerisque in, porta at lacus. Maecenas dapibus luctus cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>
+					<article>
+						<h1>Cantho University</h1>
+						<i>Major: Data Communication and Networking</i><br>
+						<i>GPA: 2.91/4</i>
+					</article>
+
 				</div>
 			</article>
 			<div class="clear"></div>
@@ -61,7 +66,7 @@
 					<h2>Developer and System Admin at CUSC</h2>
 					<p class="subDetails">June 2019 - Present</p>
 					<p> - Develop Cgate Portal with Liferay<br>
-						- Research WSO2 ESB<br>
+						- Research WSO2 ESB and Big Data<br>
 						- Configure Hadoop Cluster
 						- Centos System Mangement
 					</p>
@@ -73,20 +78,30 @@
 		
 		<section>
 			<div class="sectionTitle">
-				<h1>Key Skills</h1>
+				<h1>Skills</h1>		
 			</div>
-			
 			<div class="sectionContent">
-				<ul class="keySkills">
-					<li>A Key Skill</li>
-					<li>A Key Skill</li>
-					<li>A Key Skill</li>
-					<li>A Key Skill</li>
-					<li>A Key Skill</li>
-					<li>A Key Skill</li>
-					<li>A Key Skill</li>
-					<li>A Key Skill</li>
-				</ul>
+				<article>
+					<h2>Programming Languages</h2>
+					<p>- Java (Liferay) <br>
+					   - Python (Django)<br>
+					   - PHP</p>
+				</article>
+				
+				<article>
+					<h2>Linux</h2>
+					<p>
+						- Shell Script <br>
+						- System Monitor with Netdata or Grafana
+					</p>
+				</article>
+
+				<article>
+					<h2>OS-level virtualization</h2>
+					<p>
+						- Docker, VmWare
+					</p>
+				</article>
 			</div>
 			<div class="clear"></div>
 		</section>
@@ -99,22 +114,58 @@
 			
 			<div class="sectionContent">
 				<article>
-					<h2>College/University</h2>
-					<p class="subDetails">Qualification</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim.</p>
+					<h2>Certificate of Business Network Management at CUSC</h2>
+					<p class="subDetails">2013</p>
 				</article>
-				
-				<article>
-					<h2>College/University</h2>
-					<p class="subDetails">Qualification</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim.</p>
-				</article>
+
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>PROJECTS</h1>
+			</div>
+			
+			<div class="sectionContent">
+
+				<table class="table table-striped">
+					<thead class="thead-dark">
+					  <tr>
+						<th scope="col"></th>
+						<th scope="col">Project Name</th>
+						<th scope="col">Semester</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<th scope="row">1</th>
+						<td>Student Management System with Python(2016-2017)</td>
+						<td>Semester Project</td>
+					  </tr>
+					  <tr>
+						<th scope="row">2</th>
+						<td>Research Configure Openstack and Deploy virtual network with Netkit
+							(2017 - 2018)</td>
+						<td>Semester Project</td>
+
+					  </tr>
+					  <tr>
+						<th scope="row">3</th>
+						<td>Deployment Application with Appscale (2018 - 2019)</td>
+						<td>Final Project</td>
+					  </tr>
+					</tbody>
+				  </table>
 			</div>
 			<div class="clear"></div>
 		</section>
 		
+
 	</div>
 </div>
+
+
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
